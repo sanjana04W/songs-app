@@ -1,0 +1,142 @@
+/* index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search Input and Button Styling */
+#input {
+    padding: 15px 20px;
+    width: 300px;
+    max-width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#input:focus {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+button {
+    padding: 15px 30px;
+    background: #00CFFF;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #0083b0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Song Information Styling */
+#poster {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#poster:hover {
+    transform: scale(1.02);
+}
+
+#title {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#artist {
+    font-size: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#album {
+    font-size: 18px;
+    color: #00b4db;
+    text-align: center;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+#genre {
+    font-size: 16px;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#year {
+    font-size: 16px;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#preview {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+    
+    #input {
+        width: 100%;
+    }
+    
+    #poster {
+        max-width: 100%;
+    }
+    
+    #title {
+        font-size: 24px;
+    }
+    
+    #plot {
+        max-width: 100%;
+    }
+}
